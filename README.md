@@ -1,2 +1,3 @@
 # WebProfile-Laravel
-WebProfile dengan menggunakan framework laravel.
+PersonalBlog dengan menggunakan framework laravel.
+
