@@ -22,3 +22,7 @@ Route::get('/test', function () {
 Route::get('/sidebar', function () {
     return view('content');
 });
+
+Route::get('/content', function () {
+    return view('post-create');
+});

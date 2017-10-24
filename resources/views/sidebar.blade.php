@@ -49,42 +49,27 @@
           </li>
           <li class="treeview">
             <a href="#">
-              <i class="fa fa-laptop"></i>
-              <span>Pengaturan Video</span>
+              <i class="fa fa-newspaper-o"></i>
+              <span>Postingan</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="#"><i class="fa fa-angle-double-right"></i>Tambah Video</a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i>Edit Video</a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i>Lihat Video</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>Semua</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>Diterbitkan</a></li>
             </ul>
           </li>
           <li class="treeview">
             <a href="#">
-              <i class="fa fa-th"></i>
-              <span>Pengaturan Status PC</span>
+              <i class="fa fa-reply"></i>
+              <span>Komentar</span>
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="#"><i class="fa fa-angle-double-right"></i>Edit Status</a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i>Lihat Status</a></li>
-            </ul>
-          </li>
-          <li class="treeview">
-            <a href="#">
-              <i class="fa fa-files-o"></i>
-              <span>Reservasi</span>
-              <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-            </a>
-            <ul class="treeview-menu">
-              <li><a href="#"><i class="fa fa-angle-double-right"></i> List Reservasi</a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i> Tambah Reservasi</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>Lihat Komentar Baru</a></li>
             </ul>
           </li>
         </ul>
