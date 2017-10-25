@@ -6,7 +6,8 @@
   <title>@yield('title') | LERUfic</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   @yield('frontcss')
-  <link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{URL::asset('css/semantic.min.css')}}">
+  <link rel="stylesheet" href="{{URL::asset('css/semantic.css')}}">
   <link rel="stylesheet" href="{{URL::asset('css/font-awesome.min.css')}}">
   <link rel="stylesheet" href="{{URL::asset('css/ionicons.min.css')}}">
   <link rel="stylesheet" href="{{URL::asset('css/AdminLTE.min.css')}}">
@@ -25,7 +26,8 @@
   </style>
   @yield('backcss')
 </head>
-<body class="hold-transition skin-red sidebar-mini">
+<body>
+  <div class="hold-transition skin-red sidebar-mini">
   <div class="wrapper">
     @yield('navbar')
     <aside class="main-sidebar">
@@ -86,9 +88,11 @@
       <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io/">Almsaeed Studio</a>.</strong> All rights reserved.
     </footer>
   </div>
+  </div>
+  @yield('modal')
   @yield('frontjs')
   <script src="{{URL::asset('js/jquery-2.2.3.min.js')}}" type="text/javascript"></script>
-  <script src="{{URL::asset('js/bootstrap.js')}}" type="text/javascript"></script>
+  <script src="{{URL::asset('js/semantic.js')}}" type="text/javascript"></script>
   <script src="{{URL::asset('js/jquery.slimscroll.min.js')}}" type="text/javascript"></script>
   <script src="{{URL::asset('js/app.min.js')}}" type="text/javascript"></script>
   @yield('backjs')

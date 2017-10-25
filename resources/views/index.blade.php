@@ -4,7 +4,7 @@
 <head>
 	@yield('css')
 	<title>LERUfic Atans</title>
-	<link rel="stylesheet" type="text/css" href=" {{URL::asset('css/semantic.min.css')}}">
+	<link rel="stylesheet" type="text/css" href=" {{URL::asset('css/semantic/semantic.min.css')}}">
 	<style type="text/css">
 		#particles-js {
 		  position:fixed;

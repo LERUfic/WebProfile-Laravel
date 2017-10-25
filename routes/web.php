@@ -20,7 +20,7 @@ Route::get('/test', function () {
 });
 
 Route::get('/sidebar', function () {
-    return view('content');
+    return view('post-list');
 });
 
 Route::get('/content', function () {
