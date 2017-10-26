@@ -1,5 +1,6 @@
-<header class="main-header">
-  <button onclick="showSidebar()" class="ui basic button" >
-      <i class="sidebar icon"></i>
-  </button>
-</header>
+<div class="ui basic icon menu">
+  <a id= "toggle" class="item" >
+    <i class="sidebar icon"></i>
+    Menu
+  </a>
+</div>

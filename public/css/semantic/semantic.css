@@ -34185,7 +34185,11 @@ body.pushable {
 }
 
 body.pushable > .pusher {
-  background: #FFFFFF;
+      background-color:#f1f1f1;
+      background-image:url('/noise.png');
+      background-repeat:repeat;
+      background-position:top left;
+      background-attachment:fixed;
 }
 
 /* Pusher should inherit background from context */
