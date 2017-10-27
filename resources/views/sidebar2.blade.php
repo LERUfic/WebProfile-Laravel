@@ -6,9 +6,10 @@
   <title>@yield('title') | LERUfic</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   @yield('frontcss')
-  <link rel="stylesheet" href="{{URL::asset('css/semantic/semantic.min.css')}}">
-  <link rel="stylesheet" href="{{URL::asset('css/semantic/semantic.css')}}">
+  <link rel="stylesheet" href="{{URL::asset('semantic/semantic.min.css')}}">
+  <link rel="stylesheet" href="{{URL::asset('semantic/semantic.css')}}">
   <link rel="stylesheet" href="{{URL::asset('css/font-awesome.min.css')}}">
+  <link rel="shortcut icon" href="{{URL::asset('/favicon.ico')}}" type="image/x-icon">
   <style type="text/css">
     body{
       background-color:#f1f1f1;
@@ -37,7 +38,7 @@
     </div>
   @yield('frontjs')
   <script src="{{URL::asset('js/jquery-2.2.3.min.js')}}" type="text/javascript"></script>
-  <script src="{{URL::asset('css/semantic/semantic.js')}}" type="text/javascript"></script>
+  <script src="{{URL::asset('semantic/semantic.js')}}" type="text/javascript"></script>
   <script src="{{URL::asset('js/jquery.slimscroll.min.js')}}" type="text/javascript"></script>
   <script>
     $('#toggle').click(function(){

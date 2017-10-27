@@ -7,15 +7,13 @@
 @endsection
 
 @section('frontcss')
-<link rel="stylesheet" href="{{URL::asset('css/summernote.css')}}">
 @endsection
 
 @section('backcss')
 @endsection
 
 @section('content')
-  <button onclick="showPostModal()" class="huge ui inverted red button">New Post +</button>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis consectetur ducimus dolore, est suscipit, beatae, dolorem molestias vel consequuntur excepturi eligendi? Nisi, reprehenderit laborum? Atque ea numquam maiores quibusdam, corrupti!
+  <button onclick="showPostModal()" class="ui inverted red button">New Post +</button>
 @endsection
 
 @section('modal')
@@ -25,31 +23,40 @@
   <div class="description">
     <form method="POST" action="#">
       {{ csrf_field() }}
-      <div class="form-group">
-        <textarea class="form-control summernote" name="detail"></textarea>
-      </div>
-      <div class="ui buttons">
+      <br>
+      <center><textarea id="formInput">Post Something Nice Please :)</textarea></center>
+      <br>
+      <br>
+      <div class="pull-right ui buttons" style="margin-right: 10px; margin-bottom: 10px;">
         <button type="reset" class="ui button" onclick="closePostModal()">Cancel</button>
         <div class="or"></div>
         <button type="submit" class="ui positive button">Save</button>
       </div>
     </form>
+    <br>
   </div>
 </div>
 @endsection
 
-@section('frontjs')
- 
+@section('frontjs') 
 @endsection
 
 @section('backjs')
+  <script src="{{URL::asset('tinymce/tinymce.js')}}" type="text/javascript"></script>
 	<script type="text/javascript">
-    	$(document).ready(function() {
-        $('.summernote').summernote({
-              height: 300,
-          });
+     $(document).ready(function() {
+        tinymce.init({
+          selector: '#formInput',
+          theme: 'modern',
+          width: 800,
+          plugins: [
+            'advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker',
+            'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
+            'save table contextmenu directionality emoticons template paste textcolor'
+          ],
+          toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons'
+        });
       });
-
       function closePostModal(){
         $('.ui.modal').modal('hide');
       }
@@ -59,8 +66,6 @@
           transition: 'browse',
         }).modal('show');
       }
-
+     
 	</script>
-	<script src="{{URL::asset('js/summernote.js')}}" type="text/javascript"></script>
-	<script src="{{URL::asset('js/bootstrap.minx.js')}}" type="text/javascript"></script>
 @endsection
