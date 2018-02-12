@@ -42,6 +42,7 @@
 @endsection
 
 @section('backjs')
+  <script src="{{URL::asset('tinymce/jquery.tinymce.min.js')}}" type="text/javascript"></script>
   <script src="{{URL::asset('tinymce/tinymce.js')}}" type="text/javascript"></script>
 	<script type="text/javascript">
      $(document).ready(function() {
